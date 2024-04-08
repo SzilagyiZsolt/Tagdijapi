@@ -1,0 +1,301 @@
+/*Navbar*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body, html {
+    height: 125%;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%);
+}
+
+nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li button {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+h1{
+    text-align: center;
+}
+li{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/*table
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+  font-family: "Open Sans", sans-serif;
+}
+
+.nfl a,
+.mlb a,
+.nhl a,
+.pga a {
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+.nfl a {
+  color: rgba(79, 192, 210, 1);
+}
+.nfl a:hover {
+  color: darken(rgba(79, 192, 210, 1), 20%);
+}
+.mlb a {
+  color: rgba(82, 210, 154, 1);
+}
+.mlb a:hover {
+  color: darken(rgba(82, 210, 154, 1), 20%);
+}
+.nhl a {
+  color: rgba(231, 196, 104, 0.7);
+}
+.nhl a:hover {
+  color: darken(rgba(231, 196, 104, 0.7), 20%);
+}
+.pga a {
+  color: rgba(235, 118, 85, 1);
+}
+.pga a:hover {
+  color: darken(rgba(235, 118, 85, 1), 20%);
+}
+
+.wrapper {
+  width: 100%;
+  margin: 20px auto 100px auto;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+  position: relative;
+}
+
+.row ul {
+  margin: 0;
+  padding: 0;
+}
+.row ul li {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  list-style: none;
+  display: inline-block;
+  width: 20%;
+  box-sizing: border-box;
+}
+
+.title ul li {
+  padding: 15px 13px;
+}
+.row ul li {
+  padding: 5px 10px;
+}
+
+.row {
+  padding: 20px 0;
+  height: 30px;
+  font-size: 0;
+  position: relative;
+  transition: all 0.2s ease-out;
+  border-top: 1px solid darken(rgba(255, 255, 255, 0.1), 100%);
+}
+.row:hover {
+  background-color: lighten(rgba(0, 0, 0, 0.9), 10%);
+  height: 65px;
+}
+.title {
+  padding: 25px 0 5px 0;
+  height: 45px;
+  font-size: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid lighten(rgba(255, 255, 255, 0.1), 100%);
+}
+.title:hover {
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid lighten(rgba(255, 255, 255, 0.1), 100%);
+}
+
+
+.nfl {
+  border-left: 3px solid darken(rgba(79, 192, 210, 1), 30%);
+}
+.nfl:hover {
+  border-left: 3px solid rgba(79, 192, 210, 1);
+}
+.mlb {
+  border-left: 3px solid darken(rgba(82, 210, 154, 1), 30%);
+}
+.mlb:hover {
+  border-left: 3px solid rgba(82, 210, 154, 1);
+}
+.nhl {
+  border-left: 3px solid darken(rgba(231, 196, 104, 0.7), 30%);
+}
+.nhl:hover {
+  border-left: 3px solid rgba(231, 196, 104, 0.7);
+}
+.pga {
+  border-left: 3px solid darken(rgba(235, 118, 85, 1), 30%);
+}
+.pga:hover {
+  border-left: 3px solid rgba(235, 118, 85, 1);
+}
+
+.row-fadeIn-wrapper {
+  opacity: 0;
+  font-size: 0;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.2s ease-out;
+  animation: fadeIn 0.4s ease-out 2s 1 alternate;
+  animation-fill-mode: forwards;
+}
+.row-fadeIn-wrapper:hover {
+  height: 35px;
+}
+
+.fadeIn {
+  padding: 20px 0;
+  font-size: 0;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.fadeIn:hover {
+  background-color: lighten(rgba(0, 0, 0, 0.9), 10%);
+}
+
+.row-fadeOut-wrapper {
+  font-size: 0;
+  position: relative;
+  transition: all 0.2s ease-out;
+  animation: fadeOut 0.4s ease-out 8s 1 alternate;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  height: 65px;
+}
+.row-fadeOut-wrapper:hover {
+  height: 100px;
+}
+
+.update-row {
+  animation: update 0.5s ease-out 12s 1 alternate;
+}
+.update1 {
+  top: 25px;
+  display: inline-block;
+  opacity: 1;
+  animation: update1 1s ease-out 12s 1 alternate;
+  animation-fill-mode: forwards;
+}
+.update2 {
+  top: 25px;
+  display: inline-block;
+  opacity: 0;
+  animation: update2 4s ease-out 13s 1 alternate;
+  animation-fill-mode: forwards;
+}
+
+ul.more-content li {
+  top: 22px;
+  font-size: 13px;
+  margin: 0;
+  padding: 10px 13px;
+  height: 250px;
+  width: 100%;
+  color: darken(rgba(255, 255, 255, 0.9), 50%);
+}
+
+.small {
+  color: darken(rgba(255, 255, 255, 0.9), 60%);
+  font-size: 10px;
+  padding: 0 10px;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    padding: 0;
+  }
+  to {
+    background: darken(rgba(255, 255, 255, 0.1), 80%);
+    opacity: 1;
+    padding: 0 0 65px 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    background: darken(rgba(255, 255, 255, 0.1), 80%);
+    opacity: 1;
+    height: 65px;
+  }
+  to {
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    height: 0;
+  }
+}
+@keyframes update {
+  0% {
+    background: darken(rgba(255, 255, 255, 0.1), 80%);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    background: darken(rgba(255, 255, 255, 0.1), 80%);
+  }
+}
+@keyframes update1 {
+  0% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes update2 {
+  0% {
+    opacity: 0;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  20% {
+    opacity: 1;
+    color: rgba(82, 210, 154, 1);
+  }
+  100% {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}

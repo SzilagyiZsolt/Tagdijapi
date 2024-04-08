@@ -11,8 +11,21 @@
     <title>Ügyfelek nyilvántartása</title>
 </head>
 <body>
-    <div class="container-fluid">
-      <h1>Ügyfelek nyilvántartása</h1>
+    <nav>
+        <h1>Ügyfelek nyilvántartása</h1>
+        <ul>
+            <li>
+                <button type="button" class="btn btn-primary" id="create"><i class="fa-solid fa-plus"></i></button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-dark" id="read"><i class="fa-solid fa-list-check"></i></button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-info" id="update"><i class="fa-solid fa-pen"></i></button>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid color">
         <div class="container">
             <form action="#" method="post" class="row" id="dolgozoForm">
                 <fieldset>
@@ -39,12 +52,6 @@
                         </div>
                     </div>
                 </fieldset>
-                <div class="d-flex justify-content-around">
-                  <button type="button" class="btn btn-primary" id="create"><i class="fa-solid fa-plus"></i></button>
-                  <button type="button" class="btn btn-dark" id="read"><i class="fa-solid fa-list-check"></i></button>
-                  <button type="button" class="btn btn-info" id="update"><i class="fa-solid fa-pen"></i></button>
-                  <!--<button type="button" class="btn btn-info" id="delete">Delete</button>-->
-                </div>
             </form>
             <div id="tagdijlista">
             
