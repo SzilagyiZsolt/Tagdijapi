@@ -15,6 +15,9 @@
         <h1>Ügyfelek nyilvántartása</h1>
         <ul>
             <li>
+                <button type="button" class="btn btn-primary" id="createBefiz">Befizetés</button>
+            </li>
+            <li>
                 <button type="button" class="btn btn-primary" id="create"><i class="fa-solid fa-plus"></i></button>
             </li>
             <li>
@@ -25,11 +28,11 @@
             </li>
         </ul>
     </nav>
-
     <div class="container-fluid color">
         <div class="container">
             <form action="#" method="post" class="row" id="dolgozoForm">
                 <fieldset>
+                    <legend>Ügyfél</legend>
                     <div class="row">
                         <div class="mb-3 col-2">
                             <label for="azon" class="form-label">Azonosító</label>
@@ -50,6 +53,25 @@
                         <div class="mb-3 col-6">
                             <label for="orsz" class="form-label">Ország</label>
                             <input type="text" class="form-control" id="orsz" name="orsz" required>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <form action="#" method="post" class="row" id="befizForm">
+                <fieldset>
+                    <legend>Befizetés</legend>
+                    <div class="row">
+                        <div class="mb-3 col-4">
+                            <label for="befizazon" class="form-label">Azonosító</label>
+                            <input type="number" class="form-control" id="befizazon" name="befizazon" numeric required>
+                        </div>
+                        <div class="mb-3 col-4">
+                            <label for="befizdatum" class="form-label">Dátum</label>
+                            <input type="datetime" name="befizdatum" id="befizdatum" class="form-control" numeric>
+                        </div>
+                        <div class="mb-3 col-4">
+                            <label for="befizosszeg" class="form-label">Összeg</label>
+                            <input type="number" class="form-control" id="befizosszeg" name="befizosszeg" numeric required>
                         </div>
                     </div>
                 </fieldset>
